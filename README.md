@@ -106,4 +106,4 @@ claude-academic-cv-builder-skill/
 
 ## License
 
-See LICENSE. The applicable upstream MIT notice is retained, with a separate notice for new supplementary repository documentation.
+Released under the MIT License. Copyright (c) 2026 Brajesh Kumar. See the root `LICENSE` file for the complete terms.
