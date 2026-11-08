@@ -1,98 +1,109 @@
-# claude-academic-cv-builder-skill
+# Academic CV Builder Skill
 
-A Claude Code skill for preparing structured academic CVs for faculty, research, postdoctoral, and postgraduate opportunities.
+A structured skill for creating and revising academic curriculum vitae for research, teaching, faculty, postdoctoral, and related academic opportunities. It helps organize a complete scholarly record while keeping every claim accurate, traceable, and appropriate to the target position.
 
-## Overview
+## What This Skill Helps With
 
-Academic CVs differ from industry resumes. They often need to show research contributions, publications, grants, teaching, supervision, presentations, service, and academic experience in a clear and verifiable format.
+- Select a section order that fits the target role and discipline.
+- Present education, academic appointments, and research experience.
+- Organize publications by type and status.
+- Format conference talks, posters, and invited presentations.
+- Document grants, fellowships, awards, and funding roles.
+- Present teaching, course development, mentoring, and supervision.
+- Record academic service, memberships, and honors.
+- Identify missing information and inconsistent dates.
+- Review the final CV against application instructions.
 
-This skill helps organize those sections and tailor the document to the academic role without inventing credentials or publication details.
+## When to Use It
 
-## Main Capabilities
+Use this skill when preparing or updating an academic CV for faculty, postdoctoral, research scientist, lecturer, doctoral, or similar academic opportunities. It is also useful when converting an academic record into a consistent CV.
 
-- Structure academic CV sections.
-- Organize research and teaching experience.
-- Format publications and presentations.
-- List grants, awards, and fellowships.
-- Present academic appointments and education.
-- Include supervision and service contributions.
-- Tailor the CV for faculty, postdoctoral, and research roles.
-- Improve clarity and consistency.
-- Identify missing or incomplete information.
-
-## Academic CV vs. Industry Resume
-
-| Academic CV | Industry Resume |
-|---|---|
-| Comprehensive academic record | Targeted role summary |
-| Publications and research | Professional achievements |
-| Teaching and supervision | Work experience and skills |
-| Grants, awards, and service | Business impact and delivery |
-| Length varies by career stage | Usually concise and role-specific |
+An academic CV is not simply a longer industry resume. It records scholarly activity in a way that allows a committee to understand the applicant's research, teaching, service, and trajectory.
 
 ## Installation
 
-```bash
+~~~bash
 git clone https://github.com/Brajesh31/claude-academic-cv-builder-skill.git ~/.claude/skills/academic-cv-builder
-```
+~~~
 
 ## Usage
 
-Invoke the skill when preparing an academic CV:
+Invoke:
 
-```text
+~~~text
 /academic-cv-builder
-```
+~~~
 
-Provide the target role, career stage, education, appointments, publications, grants, teaching, presentations, and any required institutional format.
+Supply the target position, application requirements, academic discipline, career stage, and the applicant's verified record. Do not fabricate degrees, publications, funding, appointments, awards, teaching evaluations, or collaborators.
 
-## Recommended CV Sections
+## Recommended Academic CV Structure
 
-1. Contact and professional profile.
-2. Education.
+1. Contact information and professional links.
+2. Education and thesis or dissertation details.
 3. Academic appointments and research experience.
-4. Publications.
-5. Grants, fellowships, and awards.
-6. Teaching and supervision.
-7. Conference presentations.
-8. Academic service and leadership.
-9. Professional memberships.
-10. Technical or research skills where relevant.
+4. Publications, grouped by type and status.
+5. Presentations, talks, and posters.
+6. Grants, fellowships, and funding.
+7. Teaching experience and course development.
+8. Mentoring and supervision.
+9. Academic, professional, and institutional service.
+10. Professional memberships.
+11. Honors and awards.
+12. References, where requested or customary.
 
-Not every section is required for every applicant. Prioritize what the target institution and role value.
+The correct order depends on the role. Research-intensive positions often prioritize publications, grants, and research experience. Teaching-focused positions may put teaching and course development earlier. Administrative roles may emphasize leadership and service.
 
-## Publication Formatting
+## Publication Handling
 
-Keep publication details consistent. Verify author order, title, venue, year, volume, issue, page range, DOI, and publication status. Distinguish published, accepted, under-review, and preprint work.
+Preserve author order and distinguish peer-reviewed publications, books, chapters, proceedings, technical reports, preprints, accepted work, work under review, and work in preparation. Include DOI information when verified. Do not imply submitted or in-progress work is already published.
 
-## Recommended Workflow
+Use one citation style consistently within a category. Follow the target discipline's norms and institution instructions where explicit.
 
-1. Identify the academic position and application requirements.
-2. Collect the complete academic record.
-3. Verify publication and grant details.
-4. Select the relevant sections.
-5. Order sections by role priorities.
-6. Use consistent formatting.
-7. Remove duplication and unsupported claims.
-8. Review length and readability.
-9. Check the final document against the application instructions.
+## Role-Specific Emphasis
+
+| Target role | Evidence to prioritize |
+|---|---|
+| Tenure-track faculty | Research trajectory, publications, independent funding, teaching, mentoring |
+| Postdoctoral role | Doctoral/postdoctoral research, publications, methods, collaboration, future potential |
+| Lecturer or teaching faculty | Teaching record, course design, pedagogy, mentoring, teaching recognition |
+| Research scientist | Research outputs, technical methods, grants, collaboration, relevant experience |
+
+## Included Resources
+
+- [Academic CV intake template](resources/academic-cv-intake-template.md)
+- [Publication record template](resources/publication-record-template.md)
+- [Final review checklist](resources/final-review-checklist.md)
 
 ## Quality Checklist
 
-- Dates and titles are accurate.
-- Publications are correctly categorized.
-- Author order is preserved.
-- Grants and awards are verifiable.
-- Teaching roles and responsibilities are clear.
-- Research contributions are specific.
-- Formatting is consistent.
-- No credentials or achievements are fabricated.
+- All dates, titles, affiliations, and role descriptions are accurate.
+- Education and appointments are consistently ordered.
+- Publication status and author order are preserved.
+- Grants distinguish PI, Co-PI, Co-I, and other roles.
+- Teaching and mentoring responsibilities are clear.
+- Awards and memberships are verifiable.
+- Section order reflects the target role.
+- Formatting is consistent and readable.
+- The final version follows application instructions.
+- No unsupported claims or inflated responsibilities are included.
 
-## Repository Contents
+## Limitations
 
-- `SKILL.md`: Main academic CV building instructions.
-- `README.md`: Section guidance, workflow, and validation checklist.
+Academic CV conventions vary by discipline, country, institution, and career stage. Use the target institution's instructions as the final authority. Page-length ranges are rough context, not mandatory limits.
 
-## Practical Principle
+## Repository Structure
 
-An academic CV is a record of scholarly work, not a marketing document. Present contributions clearly, but never inflate authorship, publication status, funding, or responsibilities.
+~~~text
+claude-academic-cv-builder-skill/
+├── SKILL.md
+├── README.md
+├── LICENSE
+└── resources/
+    ├── academic-cv-intake-template.md
+    ├── publication-record-template.md
+    └── final-review-checklist.md
+~~~
+
+## License
+
+See LICENSE. The applicable upstream MIT notice is retained, with a separate notice for new supplementary repository documentation.
